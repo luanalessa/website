@@ -48,8 +48,9 @@ export const Box = styled.span`
 
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
+  margin-top: 30px;
+
 
   `
 

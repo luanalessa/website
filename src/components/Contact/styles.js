@@ -95,14 +95,15 @@ export const Input = styled.input`
 
 `
 
-export const Button = styled.button`
+export const Button = styled.a`
   width: 100px;
   height: 35px;
   background: #F3367E;
   border: 4px solid #F3367E;
   box-sizing: border-box;
   border-radius: 6px;
-
+  text-align: center;
+  line-height:30px;
   margin-top: 30px;
   color: white;
   font-weight: bold;
