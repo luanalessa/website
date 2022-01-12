@@ -15,7 +15,7 @@ export default function Contact(){
     return (
             <S.Content id='ContactTag'>
                     <Ovni className='ovni'/>
-                    <Person className='person'/>
+                    <Person className="person"/>
                     <S.Form>
 
                     <S.Title>Contact me</S.Title>

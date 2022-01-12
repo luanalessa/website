@@ -35,7 +35,8 @@ export const Content = styled.div`
     top: 400px;
     right: 255px;
   
-   
+    animation: float 6s ease-in-out infinite;
+
   }
 
   .up{
@@ -43,7 +44,18 @@ export const Content = styled.div`
       animation: abduction 3s ;
     }
   }
-    
+
+    @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
 
     @keyframes abduction {
       from{
