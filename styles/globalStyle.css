@@ -1,0 +1,43 @@
+:root {
+    --dark-purple: #170B40;
+    --pink: #F3367E;
+}
+
+body {
+    background-color: var(--dark-purple);
+    font-family: 'Poppins', sans-serif;
+}
+
+main, section, ul, div {
+    margin: 30px auto;
+
+}
+
+main{
+    width: 900px;
+    height: auto;
+}
+
+.title{
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #c2547e; 
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--pink); 
+}

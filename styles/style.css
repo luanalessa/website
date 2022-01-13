@@ -1,0 +1,368 @@
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------              HEADER              ---------------------- */
+/* ---------------------------------------------------------------------------------- */
+header {
+    color: #FFF;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: 1px solid #4d088d;
+
+    position: fixed;
+    top: 0;
+}
+
+header li {
+    font-size: 1.1rem;
+    width: 8rem;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+header li:hover {
+    color:#F3367E;
+    transition: 0.3s;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------              HEADER              ---------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+main {
+
+    padding-left:  6%;
+    padding-right:  6%;
+
+    margin-top: 50px;
+
+
+}
+/* #home, #about, #trail, #projects, #contact {
+    width: 900px;
+    height: 95vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+} */
+
+#home{
+    display: flex;
+    justify-content: center;
+}
+
+
+#planet-about {
+
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+
+}
+
+#home h1, h3, h5 {
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+}
+
+#home-welcome{
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 31px;
+    line-height: 53px;
+    color: #FFFFFF;
+    top: 260px;
+}
+
+#home-name {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 244px;
+    text-align: center;
+    top: 280px;
+}
+
+#home-description {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    top: 500px;
+
+}
+
+#arrow {
+    position: absolute;
+    cursor: pointer;
+    bottom: 35px;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+    bottom: 50px;
+}
+
+@keyframes arrow{
+    0% {    
+     }  
+    100% {  
+        opacity: 0;
+        transform: translateY(50px)
+    }
+}
+  
+  
+
+/*---------------------------------------------------------------------------- */
+/*                                  ABOUT                                     */
+/*-------------------------------------------------------------------------- */
+
+#about {
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+#text-about {
+    width: 350px;
+    text-align: justify;
+}
+
+#text-about span {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 28px;
+
+}
+
+#about img {
+    width: 350px;
+    height: 350px;
+}
+
+/*---------------------------------------------------------------------------- */
+/*                                  TRAIL                                     */
+/*-------------------------------------------------------------------------- */
+#trail-cards {
+    width: 900px;
+}
+
+#trail h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.card {
+    width: 150px;
+    color: #ffffff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.company{
+    font-weight: bold;
+    height: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.occupation{
+    height: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.time {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.2;
+    margin-top: 10px;
+}
+
+.card ul {
+    width: 160px;
+    height: 20px;
+    text-align: left;
+    font-size: 14px;
+    opacity: 0.5;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+
+/*---------------------------------------------------------------------------- */
+/*                                PROJECTS                                    */
+/*-------------------------------------------------------------------------- */
+
+#projects {
+    gap:  0px;
+}
+
+#projects a{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: rgb(241, 82, 126);
+    cursor: pointer;
+
+    text-align: center;
+}
+
+.card-projects {
+
+    margin: 10px;
+    width: 200px;
+    height: 220px;
+    flex-flow: column wrap;
+    -webkit-box-pack: justify;
+    cursor: pointer;
+    align-items: self-start;    
+    place-content: flex-start space-between;
+    background: rgb(24, 6, 86);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-projects img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-projects:hover{
+    background: var(--purple)
+}
+
+.card-projects h4, h6{
+    width: 200px;
+    height: 30px;
+    text-align: left;
+}
+
+.card-projects h4{
+    font-weight: bold;
+    text-align: left;
+}
+
+.card-projects h6{
+    text-align: justify;
+    font-size: 14px;
+    letter-spacing: 1px;   
+    line-height: 20px; 
+    opacity: 0.5;
+
+    margin-bottom: 60px;
+}
+
+.tecnology {
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    opacity: 0.3;
+    position: relative;
+}
+
+/*---------------------------------------------------------------------------- */
+/*                                 CONTACT                                    */
+/*-------------------------------------------------------------------------- */
+
+#contact .title {
+    margin-top: 200px;
+}
+
+form input[type="text"]{
+    all: unset;
+    width: 520px;
+    height: 30px;
+
+    background: rgba(14, 6, 39, 0.75);
+    border-radius: 3px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    padding: 5px;
+
+    margin: 10px;
+
+    color: #ffffff;
+}
+
+form input::placeholder{
+    color: rgba(255, 255, 255, 0.52);
+
+}
+
+#message-email{
+    height: 90px;
+}
+
+form { 
+    height: 300px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    margin-top: 100px;
+}
+
+#contact button{
+    width: 176px;
+    height: 54px;
+    margin-left: 310px;
+
+    background: #F3367E;
+    border: 4px solid #F3367E;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+/*---------------------------------------------------------------------------- */
+/*                                 FOOTER                                    */
+/*-------------------------------------------------------------------------- */
+#ovni {
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    z-index: 1;
+    left: 130px;
+    bottom:20px;
+}
+
+footer {
+    background-image: url("../assets/images/floor.png");
+    width: 1200px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    bottom: 0px;
+    z-index: 0;
+
+    margin: 0 auto;
+}
